@@ -1,0 +1,51 @@
+/* --- UNIVERSAL HEADER "WOW" UI --- */
+.app-header {
+    background-color: var(--card-background);
+    box-shadow: var(--shadow-md);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-email {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.btn-logout {
+    padding: 0.6rem 1.2rem;
+    background-color: #FEE2E2; /* Red light */
+    color: #991B1B; /* Red dark */
+    font-weight: 600;
+    border: 1px solid #FECACA;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-logout:hover {
+    background-color: #FECACA;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}

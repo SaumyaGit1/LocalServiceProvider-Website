@@ -1,0 +1,87 @@
+/* --- ADMIN DASHBOARD "WOW" UI --- */
+.admin-dashboard-container {
+    padding: 2rem;
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+
+.admin-dashboard-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.admin-header h1 { font-size: 2.25rem; font-weight: 800; color: var(--text-primary); }
+
+/* Reusing dashboard nav styles from MyBookings */
+.dashboard-nav {
+    margin-top: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--background-color);
+    border-radius: 999px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+/* Changed from Link to button for state changes */
+.nav-link {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-radius: 999px;
+    transition: all 0.2s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+}
+.nav-link:hover { background-color: #E0E7FF; color: var(--primary-color); }
+.nav-link.active { background-color: var(--primary-color); color: white; box-shadow: var(--shadow-md); }
+
+.admin-content {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- Analytics Grid Styles --- */
+.analytics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.stat-card { background-color: #F9FAFB; padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); }
+.stat-card h3 { font-size: 1rem; font-weight: 600; color: var(--text-secondary); margin: 0 0 0.5rem 0; }
+.stat-card p { font-size: 2.5rem; font-weight: 800; color: var(--primary-color); margin: 0; }
+.stat-card.top-categories { grid-column: 1 / -1; } /* Make this card span full width */
+.top-categories ul { list-style: none; padding: 0; margin: 0; }
+.top-categories li { display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); font-weight: 500; }
+.top-categories li:last-child { border-bottom: none; }
+.top-categories li strong { font-weight: 700; color: var(--text-primary); }
+
+/* --- Table Styles --- */
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th, .admin-table td { padding: 1.25rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+.admin-table th { background-color: #f9fafb; font-weight: 600; color: #374151; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.admin-table td { background-color: white; color: var(--text-secondary); font-weight: 500; vertical-align: middle; }
+
+/* Status Badges */
+.status-badge { padding: 0.35rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; white-space: nowrap; }
+.status-pending { background-color: #FEF3C7; color: #92400E; }
+.status-approved, .user-status-active { background-color: #D1FAE5; color: #065F46; }
+.status-suspended, .user-status-suspended { background-color: #FEE2E2; color: #991B1B; }
+
+/* Action Buttons */
+.action-buttons { display: flex; gap: 0.5rem; justify-content: center; }
+.btn-action { padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: opacity 0.2s; color: white; font-size: 0.875rem; }
+.btn-action:hover { opacity: 0.85; }
+.btn-approve { background-color: var(--secondary-color); }
+.btn-suspend { background-color: var(--danger-color); }
+

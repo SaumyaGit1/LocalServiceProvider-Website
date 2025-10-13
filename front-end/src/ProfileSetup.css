@@ -1,0 +1,61 @@
+.profile-setup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+
+.profile-setup-card {
+    width: 100%;
+    max-width: 42rem; /* Wider card for more content */
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.profile-setup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.profile-setup-subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+}
+
+.category-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.category-checkbox input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+
+.category-checkbox label {
+    font-size: 0.9rem;
+    color: #374151;
+    cursor: pointer;
+}

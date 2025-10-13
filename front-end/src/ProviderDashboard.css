@@ -1,0 +1,115 @@
+/* --- PROVIDER DASHBOARD "WOW" UI --- */
+.provider-dashboard-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.provider-dashboard-card {
+    width: 100%;
+    max-width: 1100px;
+    padding: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.provider-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.provider-header h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+/* Reusing dashboard nav styles from MyBookings */
+.dashboard-nav {
+    margin-top: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--background-color);
+    border-radius: 999px;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+.nav-link { padding: 0.75rem 1.5rem; text-decoration: none; font-weight: 600; color: var(--text-secondary); border-radius: 999px; transition: all 0.2s ease-in-out; }
+.nav-link:hover { background-color: #E0E7FF; color: var(--primary-color); }
+.nav-link.active { background-color: var(--primary-color); color: white; box-shadow: var(--shadow-md); }
+
+/* NEW Section styling */
+.dashboard-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+.dashboard-section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.section-header, .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    gap: 0.75rem;
+}
+
+.notification-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+
+.btn-create-listing {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+.btn-create-listing:hover { background-color: var(--primary-hover); }
+
+/* Reusing table styles from MyBookings */
+.bookings-table, .listings-table { width: 100%; border-collapse: collapse; }
+.bookings-table th, .bookings-table td, .listings-table th, .listings-table td { padding: 1.25rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+.bookings-table th, .listings-table th { background-color: #f9fafb; font-weight: 600; color: #374151; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.bookings-table td, .listings-table td { background-color: white; color: var(--text-secondary); font-weight: 500; vertical-align: middle; }
+
+/* Action buttons */
+.action-buttons { display: flex; gap: 0.5rem; }
+.btn-action { padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: opacity 0.2s; color: white; font-size: 0.875rem; }
+.btn-action:hover { opacity: 0.85; }
+.btn-confirm { background-color: var(--secondary-color); }
+.btn-cancel { background-color: var(--danger-color); }
+
+.no-items-message {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    color: var(--text-secondary);
+}
+

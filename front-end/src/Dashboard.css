@@ -1,0 +1,59 @@
+/* Main container for the dashboard, centers content */
+.dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+/* The white card in the middle */
+.dashboard-card {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Main title styling */
+.dashboard-title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-welcome-text {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Subtitle text styling */
+.dashboard-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Logout button styling */
+.dashboard-logout-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: white;
+    background-color: #dc3545; /* A standard red color for logout/delete */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.dashboard-logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

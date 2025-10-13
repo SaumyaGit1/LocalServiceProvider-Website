@@ -1,0 +1,203 @@
+/* Main container for the authentication pages */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+/* The white card that holds the form content */
+.auth-card {
+  width: 100%;
+  max-width: 28rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Main title (e.g., "Welcome Back!") */
+.auth-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2937;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle text below the main title */
+.auth-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Container for each label and input pair */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Styling for labels */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Styling for input fields */
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  color: #374151;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
+}
+
+/* Styling for the main submit button */
+.form-button {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover {
+  background-color: #4338ca;
+}
+
+
+
+/* Text at the bottom (e.g., "Don't have an account?") */
+.bottom-text {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 1.5rem;
+}
+
+/* Link at the bottom (e.g., "Sign Up") */
+.bottom-link {
+  font-weight: 500;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.bottom-link:hover {
+  text-decoration: underline;
+}
+
+/* Container for "Remember me" and "Forgot password" */
+.extra-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 0.5rem;
+}
+
+.forgot-password-button {
+    font-weight: 500;
+    color: #4f46e5;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.forgot-password-button:hover {
+    text-decoration: underline;
+}
+
+/* --- Signup Page Specific Styles --- */
+.role-selector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.role-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.role-button.active {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.role-button.inactive {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.role-button.inactive:hover {
+    background-color: #d1d5db;
+}
+
+.role-button svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.role-button.active svg {
+    stroke: white;
+}
+
+.role-button.inactive svg {
+    stroke: #6b7280;
+}
+
+/* --- Error and Success Messages --- */
+.error-message {
+    color: #dc3545; /* Red */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.success-message {
+    color: #28a745; /* Green */
+    text-align: center;
+    margin-top: 1rem;
+}

@@ -1,0 +1,67 @@
+/* --- GLOBAL STYLES & UI OVERHAUL --- */
+/* Import a professional, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #4F46E5; /* Indigo */
+  --primary-hover: #4338CA;
+  --secondary-color: #10B981; /* Emerald */
+  --danger-color: #EF4444; /* Red */
+  --background-color: #F9FAFB; /* Cool Gray */
+  --card-background: #FFFFFF;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border-color: #E5E7EB;
+  --font-sans: 'Inter', sans-serif;
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General button styling for a consistent look */
+.form-button {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.form-button:active {
+    transform: scale(0.98);
+}
+
+/* Consistent error and success messages */
+.error-message {
+    color: var(--danger-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.success-message {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+

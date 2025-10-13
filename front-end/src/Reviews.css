@@ -1,0 +1,61 @@
+/* --- REVIEWS SECTION "WOW" UI --- */
+.reviews-section {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.reviews-section h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.review-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.review-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.review-comment {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.review-author {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Reusable Star Display Component Styles */
+.star-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.star-display .star {
+    font-size: 1.25rem;
+    color: #CBD5E1;
+}
+.star-display .star.filled {
+    color: #FBBF24;
+}
+.star-display span {
+    font-weight: 600;
+    color: var(--text-secondary);
+}

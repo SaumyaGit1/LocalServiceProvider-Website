@@ -1,0 +1,101 @@
+/* --- BOOKING PAGE "WOW" UI --- */
+.booking-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.booking-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.booking-header {
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.booking-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.booking-header p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+.slots-container {
+    margin-bottom: 2rem;
+}
+
+.date-group {
+    margin-bottom: 2rem;
+}
+
+.date-group h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.slot-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.slot-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.slot-btn.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.no-slots-message {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    padding: 4rem;
+}
+

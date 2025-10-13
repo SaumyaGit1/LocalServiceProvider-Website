@@ -1,0 +1,68 @@
+/* --- LEAVE A REVIEW "WOW" UI --- */
+.review-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+.review-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+.review-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.review-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+}
+
+.review-header p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+/* --- Star Rating --- */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.star {
+    font-size: 2.5rem;
+    color: #CBD5E1; /* Cool Gray 300 */
+    cursor: pointer;
+    transition: color 0.2s, transform 0.1s;
+}
+
+.star.filled {
+    color: #FBBF24; /* Amber 400 */
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #FBBF24;
+}
+.star:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+.form-group { margin-bottom: 1.5rem; }
+.form-label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; }
+.form-input { width: 100%; box-sizing: border-box; padding: 0.75rem 1rem; color: var(--text-primary); background-color: #F9FAFB; border: 1px solid var(--border-color); border-radius: 8px; font-family: var(--font-sans); font-size: 1rem; }
+.form-input:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); }
